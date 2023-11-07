@@ -2,93 +2,110 @@
 <html lang="en">
     <head>
         <title>Place Holder Company</title>
-        <!--link rel="stylesheet" href="../../Css/style.css-->
+        <link rel="stylesheet" href="../../Css/style.css">
+        <!--Boot Strap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
 
-    <body>
+    <body class="bg-dark">
         <div id="container">
-            <nav class="navbar bg-primary navbar-expand-sm">
-            <a href="../../Homepage.html" id="company-name" class="navbar-brand">
-                <img src="../../Images/Logo.png" alt="Company logo" height="80px">
-                Place Holder Co.
-            </a>
+            <nav class="navbar bg-primary navbar-expand-sm sticky-top">
+                <a href="../../Homepage.html" id="company-name" class="navbar-brand">
+                    <img src="../../Images/Logo.png" alt="Company logo" height="80px">
+                    Place Holder Co.
+                </a>
 
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu  bg-light">
-                        <li><a class="dropdown-item" href="../About.html">About us</a></li>
-                        <li><a class="dropdown-item" href="../History/History.html">History</a></li>
-                        <li><a class="dropdown-item" href="Team.html">Team</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../Products/Products.html">Products</a></li>
-                        <li><a class="dropdown-item" href="../../Products/Gallery/Gallery.html">Gallery</a></li>
-                        <li><a class="dropdown-item" href="../../Products/Reviews/Reviews.html">Reviews</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../News/News.html">News</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../../Contact/Contact.html">Contact us</a></li>
-                        <li><a class="dropdown-item" href="../../Contact/Location/Location.html">Location</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu  bg-light">
+                            <li><a class="dropdown-item" href="../About.html">About us</a></li>
+                            <li><a class="dropdown-item" href="../History/History.html">History</a></li>
+                            <li><a class="dropdown-item" href="Team.html">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../Products/Products.html">Products</a></li>
+                            <li><a class="dropdown-item" href="../../Products/Gallery/Gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="../../Products/Reviews/Reviews.html">Reviews</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../News/News.html">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../Contact/Contact.html">Contact us</a></li>
+                            <li><a class="dropdown-item" href="../../Contact/Location/Location.html">Location</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
             <main>
-                <p class="h2">Team:</p>
-                <ul class="list-unstyled">
-                    <li class="col">
-                        <img src="../../Images/Joe.png" alt="President" height="240px" width="240px"> <!-- If there is no credit they are custom made -->
-                        <div class="row justify-content-right">
+                <h2><em>Team:</em></h2>
+                <div class="card bg-secondary">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img class="img rounded" src="../../Images/Joe.png" alt="President" height="240px" width="240px"> <!-- If there is no credit they are custom made -->
+                        </div>
+                        <div class="col">
                             <h3>Joe Schmoe</h3>
                             <h4>President</h4>
                             <p>A very mysterious individual, enjoys helping people even though they prefer to remain anonymous.</p>
                         </div>
-                    </li>
-                    <li>
-                        <img src="../../Images/Nyl.png" alt="Developer" height="240px" width="240px">
-                        <div class="team-info">
+                    </div>
+                </div>
+                <div class="card bg-secondary">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img class="img rounded" src="../../Images/Nyl.png" alt="Developer" height="240px" width="240px">
+                        </div>
+                        <div class="col">
                             <h3>Nyl Finez</h3>
                             <h4>Developer</h4>
                             <p>Worked really hard to make this website funny, also created some of the images</p>
                         </div>
-                    </li>
-                    <li>
-                        <img src="../../Images/Todd.jpg" alt="Designer" height="240px" width="240px">
-                        <div class="team-info">
+                    </div>
+                </div>
+                <div class="card bg-secondary">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img class="img rounded" src="../../Images/Todd.jpg" alt="Designer" height="240px" width="240px">
+                        </div>
+                        <div class="col">
                             <h3>Todd Howard</h3>
                             <h4>Designer</h4>
                             <p>Great at turning bugs into features.</p>
-                            <p id="sources">- image credit to wikipedia</p>
+                            <figcaption class="blockquote-footer text-end">
+                                Image credit to wikipedia
+                            </figcaption>
                         </div>
-                    </li>
-                    <li>
-                        <img src="../../Images/Steve.jpg" alt="Support" height="240px" width="240px">
-                        <div class="team-info">
+                    </div>
+                </div>
+                <div class="card bg-secondary">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img class="img rounded" src="../../Images/Steve.jpg" alt="Support" height="240px" width="240px">
+                        </div>
+                        <div class="col">
                             <h3>Steve Minecraft</h3>
                             <h4>Emotional Support</h4>
                             <p>He's just there and he looks very polite.</p>
-                            <p id="sources">- image credit to pixelsquid.com</p>
+                            <figcaption class="blockquote-footer text-end">
+                                Image credit to pixelsquid.com
+                            </figcaption>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </main>
 
-            <footer><small>©Copyright 2023</small></footer>
+            <footer class="text-bg-dark"><small>©Copyright 2023</small></footer>
         </div>
-        
-        <hr>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </body>
 </html>
